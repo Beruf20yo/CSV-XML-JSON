@@ -1,11 +1,15 @@
 package ru.netology;
 
+import ru.netology.parsers.CsvJsonParser;
+import ru.netology.parsers.Parser;
+import ru.netology.parsers.XmlJsonParser;
+
 public class Main {
     public static void main(String[] args) {
-
-        CSV_JSON_Parser parser = new CSV_JSON_Parser("src/main/resources/data.csv");
-        parser.work();
-
+        Parser csvParser = new CsvJsonParser("src/main/resources/data.csv");
+        csvParser.parsing();
+        Parser xmlParser = new XmlJsonParser("src/main/resources/data.xml");
+        xmlParser.parsing();
 
     }
 }
