@@ -19,7 +19,7 @@ public class XmlJsonParser implements Parser {
     public XmlJsonParser(String fileName) {
         this.fileName = fileName;
     }
-
+    @Override
     public void parsing() {
         toJSON(fromXml(), "src/main/resources/data2.json");
     }

@@ -1,6 +1,7 @@
 package ru.netology;
 
 import ru.netology.parsers.CsvJsonParser;
+import ru.netology.parsers.JsonParser;
 import ru.netology.parsers.Parser;
 import ru.netology.parsers.XmlJsonParser;
 
@@ -10,6 +11,7 @@ public class Main {
         csvParser.parsing();
         Parser xmlParser = new XmlJsonParser("src/main/resources/data.xml");
         xmlParser.parsing();
-
+        Parser jsonParser = new JsonParser("src/main/resources/data.json");
+        jsonParser.parsing();
     }
 }

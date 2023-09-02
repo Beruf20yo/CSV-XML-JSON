@@ -18,6 +18,7 @@ public class CsvJsonParser implements Parser{
         this.fileName = fileName;
     }
 
+    @Override
     public void parsing() {
         toJSON(fromCSV(),"src/main/resources/data1.json");
     }
